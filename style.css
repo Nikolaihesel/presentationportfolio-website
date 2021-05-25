@@ -8,10 +8,10 @@
     --ff-prim: 'poppins', sans-serif; 
 
 
-    --clr-dark-500: #2b4141;
+    --clr-dark-500: #272727;
     --clr-dark-200: #c5c5c5;
     --clr-light-900: #f7f7f2;
-    --clr-accnt-p: #2f97c1;
+    --clr-accnt-p: #178f71;
     --clr-accnt-g: #119da4;
 
 
@@ -61,7 +61,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #2b4141, transparent);
+    background: linear-gradient(to top, #272727, transparent);
     z-index: 101;
 }
 
@@ -72,7 +72,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #2b4141be;
+    background: #272727a9;
     z-index: 100;
     mix-blend-mode: color;
 }
@@ -112,7 +112,7 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 103;
-    background: var(--clr-dark-200);
+    background: var(--clr-accnt-p);
     
 }
 
