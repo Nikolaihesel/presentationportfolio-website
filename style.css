@@ -78,7 +78,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #272727a9;
+    background: #f7f7f2cc;
     z-index: 100;
     mix-blend-mode: color;
 }
@@ -98,13 +98,14 @@ body {
 }
 
 .container_parralax {
+    position: relative;
     overflow: hidden;
 }
 
 .logo-outline {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
+    margin-top: 100px;
     left: 0;
     right: 70px;
     text-align: center;
@@ -112,7 +113,7 @@ body {
     max-width: 300px;
     max-height: 300px;
     z-index: 1;
-    object-fit: ;
+    
 
     
   
@@ -134,7 +135,7 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 103;
-    background: var(--clr-accnt-p);
+    background: var(--clr-dark-500);
     
 }
 
@@ -184,15 +185,20 @@ a{
     
 }
 
-.content strong {
-    color: var(--clr-accnt-p);
+.name_img {
+ background: url(/img/nick-iliasov-i0fCUofGjV8-unsplash-min.jpg)no-repeat center center;
+ background-size: cover;
+ color: #fff;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ font-size: 4rem;
+ font-weight: 1000;
 }
 
 
-.content {
-   
 
-    align-self: center;
+
+.content {
     display: flex;
     flex-direction: column;
     margin-bottom: 130px;
@@ -200,19 +206,32 @@ a{
     padding: 2em;
 }
 
+.content p {
 
+    font-size: 1.4rem;
+    background: #2c3e50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.hero h2 {
-    color: var(--clr-dark-500);
+    background-size: cover;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.wid {
+    padding-top: 1em;
+    background: url(img/nick-iliasov-i0fCUofGjV8-unsplash-min.jpg);
+    background-size: cover;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-size: 3rem;
 }
 
-.hero p {
-    color: var(--clr-dark-500);
-    font-size: 1.3rem;
-    margin-top: 1em;
 
-}
+
+
 
 .hero img {
     border-radius: 15px;
