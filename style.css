@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 
 
 
 :Root {
 
     --ff-prim: 'poppins', sans-serif; 
+    --ff-scd: 'pattaya', sans-serif;
 
 
     --clr-dark-500: #272727;
@@ -240,3 +241,62 @@ a{
 }
 
 
+
+
+
+/* portfolio */
+
+/* .container-sidelines {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-side {
+    background: #272727;
+    height: 100vh;
+    width: 15em;
+}
+
+.right-side {
+    background: #272727;
+    height: 100vh;
+    width: 15em;
+    
+} */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "left-side pcontent pcontent right-side"
+      ". . . ."
+      ". . . .";
+  }
+  .left-side { 
+      grid-area: left-side; 
+      background: #272727;
+      height: 300vh;
+    
+    }
+  .right-side {
+       grid-area: right-side;
+       background: #272727;
+      height: 300vh;
+
+     }
+
+
+  .pcontent { grid-area: pcontent; 
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-scd);
+    font-size: 3rem;
+    margin-top: 1em;
+
+    
+    color: #272727;
+}
