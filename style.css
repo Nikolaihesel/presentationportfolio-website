@@ -149,6 +149,12 @@ header {
     
 }
 
+.logo {
+    height: 100px;
+    width:150px;
+    justify-self: center;
+}
+
 
 ul {
     justify-content: flex-end;
@@ -281,6 +287,8 @@ a{
       background: #272727;
       height: 300vh;
     
+      
+    
     }
   .right-side {
        grid-area: right-side;
@@ -294,9 +302,29 @@ a{
     display: flex;
     justify-content: center;
     font-family: var(--ff-scd);
-    font-size: 3rem;
-    margin-top: 1em;
-
-    
     color: #272727;
+}
+
+.pcontent h1 {
+    font-size: 6rem;
+    margin-top: 1em;
+    color: #272727;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-scd);
+    font-size: 3rem;
+    color: var(--clr-light-900);
+
+}
+
+.left-side h3 {
+    font-size: 3rem;
+    font-size: 4rem;
+    margin-top: 2em;
+    position: sticky;
+    top: 50px;
+
 }
