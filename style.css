@@ -252,7 +252,7 @@ a{
 
 /* portfolio */
 
-/* .container-sidelines {
+ .container-sidelines {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -269,62 +269,57 @@ a{
     height: 100vh;
     width: 15em;
     
-} */
+} 
 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "left-side pcontent pcontent right-side"
-      ". . . ."
-      ". . . .";
-  }
-  .left-side { 
-      grid-area: left-side; 
-      background: #272727;
-      height: 300vh;
-    
-      
-    
-    }
-  .right-side {
-       grid-area: right-side;
-       background: #272727;
-      height: 300vh;
-
-     }
-
-
-  .pcontent { grid-area: pcontent; 
+.middle {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: var(--ff-scd);
     color: #272727;
+    flex-wrap: wrap;
+
+    
+    
+   
+   
 }
 
-.pcontent h1 {
-    font-size: 6rem;
-    margin-top: 1em;
-    color: #272727;
+.middle h1 {
+    font-size: 120px;
 }
 
-.left-side {
-    display: flex;
-    justify-content: center;
-    font-family: var(--ff-scd);
-    font-size: 3rem;
-    color: var(--clr-light-900);
+.middle p {
+    font-family: var(--ff-prim);
+    max-width: 30ch;
+    
 
 }
 
-.left-side h3 {
-    font-size: 3rem;
-    font-size: 4rem;
-    margin-top: 2em;
-    position: sticky;
-    top: 50px;
+.animation {
+    border: none;
+   height: 150px;
+   width: 150px;
+}
+
+
+
+.animation{
+    width: 500px;
+    height: 500px;
+    background-image: url(img/animation_sidste-01.png);
+	margin: 0 auto;
+    background-repeat: no-repeat;
+    animation: animation 1.4s steps(10, end) infinite;
+
 
 }
+
+@keyframes animation {
+    from { background-position: 0px; }
+    to { background-position: -10000px; }
+}
+
+
