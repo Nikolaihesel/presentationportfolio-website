@@ -22,11 +22,16 @@
     </ul>
 </header>
 
+<div class="container_parralax">
+
+<img src="img/logo-outline.svg" id="logo" alt=""  class="logo-outline"> 
 <section class="parralax">
+    
     <img src="img/parralax_sky.png" alt="" id="sky">
     <img src="img/parralax_mountain.png" alt="" id="mountain">
-      <h2 id="text">Nikolai</h2>
+    
   </section>
+</div>
 
 
     
@@ -50,13 +55,13 @@
   <Script type="text/javascript">
     let sky = document.getElementById("sky");
     let mountain = document.getElementById("mountain");
-    let text = document.getElementById("text");
+    let logo = document.getElementById("logo");
 
     window.addEventListener('scroll', function() {
         var value = window.scrollY;
         sky.style.top = value * 1 + 'px';
         mountain.style.top = value * .1 + 'px';
-        text.style.top = value * 1.5 + 'px';
+        logo.style.top = value * 1.5 + 'px';
     })
 
     
