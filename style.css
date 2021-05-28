@@ -260,13 +260,23 @@ a{
 
 .left-side {
     background: #272727;
-    height: 100vh;
+    height: 400vh;
     width: 15em;
 }
 
+.sidebar_p {
+    position: fixed;
+    padding-top: 10em;
+    color: var(--clr-light-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .right-side {
     background: #272727;
-    height: 100vh;
+    height: 400vh;
     width: 15em;
     
 } 
@@ -288,22 +298,41 @@ a{
 }
 
 .middle h1 {
-    font-size: 120px;
+    font-size: 10rem;
+    margin-top: -5em;
 }
 
 .middle p {
     font-family: var(--ff-prim);
     max-width: 30ch;
-    
-
+    margin-right: 25em;
 }
 
+.middle h2 {
+    margin-top: 2em;
+    font-size: 4rem;
+}
+
+
 .animation {
-    border: none;
+    
    height: 150px;
    width: 150px;
 }
 
+.middle hr {
+    height: 3px;
+    border: none;
+    background: #2c3e50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.salvador {
+    
+    height: 500px;
+    width:500px;
+}
 
 
 .animation{
@@ -312,7 +341,7 @@ a{
     background-image: url(img/animation_sidste-01.png);
 	margin: 0 auto;
     background-repeat: no-repeat;
-    animation: animation 1.4s steps(10, end) infinite;
+    animation: animation 1.2s steps(10, end) infinite;
 
 
 }
