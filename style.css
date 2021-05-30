@@ -30,6 +30,7 @@ html {
 body {
     font-family: var(--ff-prim);
     background: var(--clr-light-900);
+    min-height: 100vh;
     
 }
 
@@ -369,6 +370,13 @@ a{
     
 }
 
+.ui-content a {
+    color: var(--clr-dark-500);
+    font-size: 1rem;
+    text-decoration: underline;
+    padding: 0;
+}
+
 .ui-content p  {
     padding: 4em 2em;
     max-width: 40ch;
@@ -411,6 +419,9 @@ a{
     margin: 3em;
 }
 
+.dog-container img {
+    margin: 3em;
+}
 
 
 
@@ -480,6 +491,7 @@ a{
     display: flex;
     padding: 3em;
     justify-content: space-evenly;
+    margin-bottom: 4.5em;
 }
 
 .om-content{
@@ -496,6 +508,9 @@ a{
     max-width: 30ch;
 }
 
+.line {
+    margin-top: 6em;
+}
 
 
 
@@ -507,7 +522,7 @@ a{
         padding-left: 0;
     }
     .image-link{
-        display: none;
+       
         
     }
     a{
@@ -578,6 +593,20 @@ a{
     .om-img img {
         height: 300px;
     }
+
+    .graphic-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dog-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 
