@@ -335,8 +335,7 @@ a{
 
 
 .animation{
-    width: 100%;
-    
+    width: 500px;
     background-image: url(img/animation_sidste-01.png);
 	margin: 0 auto;
     background-repeat: no-repeat;
@@ -350,6 +349,65 @@ a{
     from { background-position: 0px; }
     to { background-position: -10000px; }
 }
+
+
+.footer{
+    background-color: var(--clr-dark-500);
+    color: var(--clr-light-900);
+    text-align: center;
+    padding: 2.5em 0;
+
+}
+
+.footer a { 
+    text-decoration: none;
+    
+ 
+}
+.footer__link {
+    padding-right: 2.5em;
+   
+}
+
+.social-list {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    list-style: none;
+    margin-right: 0em;
+    
+}
+
+
+
+
+.footer__link:hover,
+.social-list__link:hover{
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list title {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
+
+
 
 @media (max-width : 768px){
 
