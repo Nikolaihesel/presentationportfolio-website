@@ -350,6 +350,10 @@ a{
 
 }
 
+.animation-content {
+    padding-bottom: 5em;
+}
+
 @keyframes animation {
     from { background-position: 0px; }
     to { background-position: -10000px; }
@@ -366,7 +370,7 @@ a{
 }
 
 .ui-content p  {
-    padding-top: 2em;
+    padding: 4em 2em;
     max-width: 40ch;
     flex-basis: 50%;
 }
@@ -470,6 +474,32 @@ a{
 }
 
 
+/* om mig page */
+
+.om-container {
+    display: flex;
+    padding: 3em;
+    justify-content: space-evenly;
+}
+
+.om-content{
+    padding: 2em;
+
+}
+
+.om-content h2 {
+    font-size: 2rem;
+    color: var(--clr-dark-500);
+}
+
+.om-content p {
+    max-width: 30ch;
+}
+
+
+
+
+
 
 @media (max-width : 768px){
 
@@ -538,6 +568,15 @@ a{
     .salvador{
         height: 200px;
         width: 200px;
+    }
+
+    .om-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .om-img img {
+        height: 300px;
     }
 }
 
