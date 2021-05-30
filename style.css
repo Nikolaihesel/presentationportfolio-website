@@ -8,13 +8,9 @@
     --ff-prim: 'poppins', sans-serif; 
     --ff-scd: 'pattaya', sans-serif;
 
-
     --clr-dark-500: #272727;
     --clr-dark-200: #c5c5c5;
     --clr-light-900: #f7f7f2;
-    --clr-accnt-p: #178f71;
-    --clr-accnt-g: #119da4;
-
 
 
 }
@@ -49,6 +45,15 @@ body {
     align-items: center;
     text-align: center;
    
+}
+
+
+/* Om mig */
+
+.om-img  img {
+    border-radius: 10%;
+    margin: 2em;
+    
 }
 
 
@@ -260,8 +265,8 @@ a{
 
 .left-side {
     background: #272727;
-    height: 300vh;
-    width: 15em;
+    height: 500vh;
+    width: 18em;
 }
 
 .sidebar_p {
@@ -276,8 +281,8 @@ a{
 
 .right-side {
     background: #272727;
-    height: 300vh;
-    width: 15em;
+    height: 500vh;
+    width: 18em;
     
 } 
 
@@ -349,6 +354,63 @@ a{
     from { background-position: 0px; }
     to { background-position: -10000px; }
 }
+
+
+
+.ui-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    justify-content: space-between;
+    
+}
+
+.ui-content p  {
+    padding-top: 2em;
+    max-width: 40ch;
+    flex-basis: 50%;
+}
+
+ .graphic-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    padding-top: 2em;
+    
+   
+} 
+
+ .cirkle {
+    background-color: var(--clr-dark-500);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 0 .5em;
+    
+}
+
+#c1 {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#c2 {
+    margin-top: 6em;
+    margin-left: 1.5em;
+
+}
+
+.dog-container {
+    display: flex;
+    margin: 3em;
+}
+
+
+
+
+
 
 
 .footer{
